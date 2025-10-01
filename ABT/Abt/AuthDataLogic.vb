@@ -10,7 +10,8 @@ Public NotInheritable Class AuthDataLogic
             Throw New ArgumentException("equip20 は10B以上が必要")
         End If
         Dim si As New StationInfo
-        si.IdentifyCode = CUShort(equip20(0) Or (equip20(1) << 8))d
+        ' LE: 低位→高位
+        si.IdentifyCode = CUShort(CUInt(equip20(0)) Or (CUInt(equip20(1)) << 8))
         si.OperatorArea = equip20(2)
         si.OperatorUser = equip20(3)
         si.DeviceModel = equip20(4)
@@ -43,9 +44,7 @@ Public NotInheritable Class AuthDataLogic
             Throw New InvalidOperationException("CRC mismatch（生成不整合）")
         End If
 
-        ' 送信（UdpSenderは共通チームが実装）
         UdpSender.Send(destIp, port, frame)
-
         Return frame
     End Function
 
@@ -60,9 +59,9 @@ Public NotInheritable Class AuthDataLogic
         Dim frame = SendOnce(destIp, port, equip20, yyyymmdd, seq, retry)
 
         ' 受信系が未完成なので、ここはタイムアウト待ちのみ
-        Threading.Thread.Sleep(TIMEOUT_MS)
+        System.Threading.Thread.Sleep(TIMEOUT_MS)
 
-        ' ←ここで実際は Ack/Res 有無を確認。未着ならリトライ
+        ' 実際は Ack/Res 有無を確認。未着ならリトライ
         Dim needRetry As Boolean = True  ' 今は常に未着扱い
         If needRetry AndAlso RETRY_MAX >= 1 Then
             retry = CUShort(retry + 1)
@@ -73,4 +72,3 @@ Public NotInheritable Class AuthDataLogic
         Return seq
     End Function
 End Class
-

@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{650C513A-5077-4871-BD9F-B11195A3C08C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Abt.Test1</StartupObject>
+    <StartupObject>Abt.Test4</StartupObject>
     <RootNamespace>Abt</RootNamespace>
     <AssemblyName>Abt</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -73,6 +73,7 @@
     <Compile Include="AuthDataRequestBuilder.vb" />
     <Compile Include="Crc32.vb" />
     <Compile Include="FrameBuilder.vb" />
+    <Compile Include="Logger.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -91,6 +92,7 @@
     <Compile Include="Sequence.vb" />
     <Compile Include="Test1.vb" />
     <Compile Include="Test3.vb" />
+    <Compile Include="Test4.vb" />
     <Compile Include="UdpSender.vb" />
   </ItemGroup>
   <ItemGroup>

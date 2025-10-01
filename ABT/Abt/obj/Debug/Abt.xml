@@ -24,7 +24,7 @@ Abt
 </member>
 <member name="M:Abt.FrameBuilder.Build(System.UInt16,System.UInt16,System.UInt16,System.UInt16,Abt.StationInfo,System.Byte[])">
  <summary>
- 基本電文（ヘッダ32B + AppData + CRC32 4B）を生成
+ 基本電文を生成（ヘッダ32B + AppData + CRC32(4B)）
  </summary>
 </member>
 </members>
