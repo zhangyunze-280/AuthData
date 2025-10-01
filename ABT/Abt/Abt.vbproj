@@ -91,6 +91,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NamedPipeReceiver.vb" />
+    <Compile Include="NamedPipeSender.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="Sequence.vb" />
     <Compile Include="Test1.vb" />
