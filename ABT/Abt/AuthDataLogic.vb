@@ -52,7 +52,7 @@ Public NotInheritable Class AuthDataLogic
     Public Shared Function SendWithRetry(destIp As String, port As Integer,
                                          equip20 As Byte(),
                                          yyyymmdd As String) As UShort
-        Dim seq = Sequence.Next()
+        Dim seq = Sequence.Next(SeqClass.Class2)
         Dim retry As UShort = 0US
 
         Logger.LogInfo($"AuthReq Send seq={seq}, retry={retry}")

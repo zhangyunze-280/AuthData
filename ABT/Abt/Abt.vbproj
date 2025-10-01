@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{650C513A-5077-4871-BD9F-B11195A3C08C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Abt.Test4</StartupObject>
+    <StartupObject>Abt.Program</StartupObject>
     <RootNamespace>Abt</RootNamespace>
     <AssemblyName>Abt</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -71,6 +71,8 @@
   <ItemGroup>
     <Compile Include="AuthDataLogic.vb" />
     <Compile Include="AuthDataRequestBuilder.vb" />
+    <Compile Include="CommandDispatcher.vb" />
+    <Compile Include="Config.vb" />
     <Compile Include="Crc32.vb" />
     <Compile Include="FrameBuilder.vb" />
     <Compile Include="Logger.vb" />
@@ -89,6 +91,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Program.vb" />
     <Compile Include="Sequence.vb" />
     <Compile Include="Test1.vb" />
     <Compile Include="Test3.vb" />
