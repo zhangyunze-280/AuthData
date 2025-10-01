@@ -1,0 +1,11 @@
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\obj\Debug\Abt.Resources.resources
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\obj\Debug\Abt.vbproj.GenerateResource.cache
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\obj\Debug\Abt.vbproj.CoreCompileInputs.cache
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\bin\Debug\Abt.exe.config
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\bin\Debug\Abt.exe
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\bin\Debug\Abt.pdb
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\bin\Debug\Abt.xml
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\obj\Debug\Abt.exe
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\obj\Debug\Abt.xml
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\obj\Debug\Abt.pdb
+C:\Users\zhangyunze\OneDrive - cy-com.co.jp\デスクトップ\Abt\Abt\obj\Debug\Abt.vbprojAssemblyReference.cache
