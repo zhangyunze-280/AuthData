@@ -82,6 +82,7 @@
     <Compile Include="Config.vb" />
     <Compile Include="Crc32.vb" />
     <Compile Include="FrameBuilder.vb" />
+    <Compile Include="JudgeRequestLogic.vb" />
     <Compile Include="Logger.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -102,6 +103,7 @@
     <Compile Include="NamedPipeSender.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="Sequence.vb" />
+    <Compile Include="StartUpLogic.vb" />
     <Compile Include="TankingDataManager.Context.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -112,6 +114,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TankingDataManager.tt</DependentUpon>
     </Compile>
+    <Compile Include="TankingDataManager1.vb" />
     <Compile Include="UdpReceiver.vb" />
     <Compile Include="UdpSender.vb" />
   </ItemGroup>

@@ -5,8 +5,8 @@ Imports System.Threading
 Public Class NamedPipeReceiver
     Private _cts As CancellationTokenSource    '_cts:受信ループを停止するためのキャンセルトークン
     Private _pipeServer As NamedPipeServerStream    'NamedPipeServerのインスタンス
-    Private _judgeLogic As New JudgeRequestLogic()    '受信データを処理する外部ロジック
-    Private _tankingManager As New TankingDataManager
+    Private _judgeLogic As New JudgeRequestLogic   '受信データを処理する外部ロジック
+    Private _tankingManager As New TankingDataManager1
     Private _startUp As New StartUpLogic
 
     '===== 受信開始 =====
@@ -123,7 +123,7 @@ Public Class NamedPipeReceiver
 
         _tankingManager.StartTankingProcess(extra)
 
-        WriteLog($"TicketGateJudgmentTanking受信: {String.Join(", ", args)}")
+        WriteLog($"TicketGateJudgmentTanking1受信: {String.Join(", ", args)}")
     End Sub
 
     Private Sub HandleAbtOpen(args() As String)
