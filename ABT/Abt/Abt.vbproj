@@ -112,9 +112,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TankingDataManager.tt</DependentUpon>
     </Compile>
-    <Compile Include="Test1.vb" />
-    <Compile Include="Test3.vb" />
-    <Compile Include="Test4.vb" />
     <Compile Include="UdpReceiver.vb" />
     <Compile Include="UdpSender.vb" />
   </ItemGroup>
