@@ -79,7 +79,7 @@ Public Class NamedPipeSender
     ' 5. イベント通知（Abt状態変更）
     ' -------------------------------
     Public Sub SendEventAbtStatusChange(abtCtrlState As String, ebdptDest As String, hasTankingData As Boolean)
-        Dim payload As String = String.Join("|", {abtCtrlState}, {ebdptDest}, {If(hasTankingData, "1", "0")})
+        Dim payload As String = String.Join("|", {abtCtrlState, ebdptDest, If(hasTankingData, "1", "0")})
         SendString(payload)
     End Sub
 
@@ -125,17 +125,6 @@ Public Class NamedPipeSender
         SendString(payload)
     End Sub
 
-    ' -------------------------------
-    ' 9. タンキングデータ送信（CSV利用）
-    ' -------------------------------
-    Public Sub SendTankingDataToCsv(filePath As String, tankingData As List(Of String()))
-        ' tankingData: 各行が配列（列ごとのデータ）
-        Using writer As New IO.StreamWriter(filePath, False, Encoding.UTF8)
-            For Each row As String() In tankingData
-                writer.WriteLine(String.Join(",", row))
-            Next
-        End Using
-        Console.WriteLine("Tanking data saved to CSV: " & filePath)
-    End Sub
+
 
 End Class

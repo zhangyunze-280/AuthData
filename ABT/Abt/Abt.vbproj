@@ -48,7 +48,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Xml" />
@@ -95,6 +102,16 @@
     <Compile Include="NamedPipeSender.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="Sequence.vb" />
+    <Compile Include="TankingDataManager.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TankingDataManager.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TankingDataManager.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TankingDataManager.tt</DependentUpon>
+    </Compile>
     <Compile Include="Test1.vb" />
     <Compile Include="Test3.vb" />
     <Compile Include="Test4.vb" />
@@ -120,6 +137,20 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TankingDataManager.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TankingDataManager.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="TankingDataManager.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TankingDataManager.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
