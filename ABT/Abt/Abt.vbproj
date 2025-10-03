@@ -76,7 +76,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthDataLogic.vb" />
     <Compile Include="AuthDataRequestBuilder.vb" />
     <Compile Include="CommandDispatcher.vb" />
     <Compile Include="Config.vb" />
