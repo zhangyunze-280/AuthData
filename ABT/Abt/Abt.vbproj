@@ -100,8 +100,8 @@
     </Compile>
     <Compile Include="NamedPipeReceiver.vb" />
     <Compile Include="NamedPipeSender.vb" />
-    <Compile Include="Program.vb" />
     <Compile Include="Sequence.vb" />
+    <Compile Include="StartUpLogic.vb" />
     <Compile Include="TankingDataManager.Context.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
