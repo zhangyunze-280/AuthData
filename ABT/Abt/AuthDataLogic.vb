@@ -11,7 +11,7 @@
 ' 使い方（例 / NamedPipeReceiver 側）:
 '   Dim logic As New AuthDataLogic()
 '   Dim resp As String = logic.AbtAuthenticationData(
-'                           destIp, port, equip20Hex, yyyymmdd)
+'                           equip20Hex, yyyymmdd)
 '   ' resp を NamedPipeReceiver→制御アプリへそのまま返す
 ' ================================
 
